@@ -8,4 +8,5 @@ class AuthDataState with _$AuthDataState {
   const factory AuthDataState.serverError() = _ServerError;
   const factory AuthDataState.networkError() = _NetworkError;
   const factory AuthDataState.credentialAlreadyUsed() = _CredentialAlreadyUsed;
+  const factory AuthDataState.none() = _None;
 }

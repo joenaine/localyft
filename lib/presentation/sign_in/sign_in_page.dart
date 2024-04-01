@@ -4,6 +4,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:localyft/presentation/core/theme/colors.dart';
 import 'package:localyft/presentation/core/theme/text_styles.dart';
 import 'package:localyft/presentation/core/theme/theme_global_var.dart';
+import 'package:localyft/presentation/sign_in/widgets/sign_in_buttons.dart';
 
 @RoutePage()
 class SignInPage extends StatelessWidget {
@@ -49,7 +50,7 @@ class SignInPage extends StatelessWidget {
                     height: MediaQuery.of(context).size.height * 0.4,
                   ),
                 ),
-                // SignInButtons(),
+                const SignInButtons(),
               ],
             ),
           ],

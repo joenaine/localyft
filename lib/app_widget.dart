@@ -2,6 +2,7 @@ import 'package:easy_localization/easy_localization.dart';
 import 'package:flutter/material.dart' hide Router;
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:localyft/application/auth/auth_bloc.dart';
+import 'package:localyft/application/auth/sign_in_buttons/sign_in_buttons_bloc.dart';
 import 'package:localyft/application/settings/settings_bloc.dart';
 import 'package:localyft/injection.dart';
 import 'package:localyft/presentation/core/theme/app_theme.dart';
@@ -22,6 +23,9 @@ class AppWidget extends StatelessWidget {
         BlocProvider(
           create: (context) =>
               getIt<AuthBloc>()..add(const AuthEvent.authCheckRequested()),
+        ),
+        BlocProvider(
+          create: (context) => getIt<SignInButtonsBloc>(),
         ),
         BlocProvider<SettingsBloc>(
           create: (context) =>

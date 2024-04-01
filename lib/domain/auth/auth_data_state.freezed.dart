@@ -23,6 +23,7 @@ mixin _$AuthDataState {
     required TResult Function() serverError,
     required TResult Function() networkError,
     required TResult Function() credentialAlreadyUsed,
+    required TResult Function() none,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -32,6 +33,7 @@ mixin _$AuthDataState {
     TResult? Function()? serverError,
     TResult? Function()? networkError,
     TResult? Function()? credentialAlreadyUsed,
+    TResult? Function()? none,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -41,6 +43,7 @@ mixin _$AuthDataState {
     TResult Function()? serverError,
     TResult Function()? networkError,
     TResult Function()? credentialAlreadyUsed,
+    TResult Function()? none,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -52,6 +55,7 @@ mixin _$AuthDataState {
     required TResult Function(_NetworkError value) networkError,
     required TResult Function(_CredentialAlreadyUsed value)
         credentialAlreadyUsed,
+    required TResult Function(_None value) none,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -61,6 +65,7 @@ mixin _$AuthDataState {
     TResult? Function(_ServerError value)? serverError,
     TResult? Function(_NetworkError value)? networkError,
     TResult? Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult? Function(_None value)? none,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -70,6 +75,7 @@ mixin _$AuthDataState {
     TResult Function(_ServerError value)? serverError,
     TResult Function(_NetworkError value)? networkError,
     TResult Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult Function(_None value)? none,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -136,6 +142,7 @@ class _$SuccessImpl implements _Success {
     required TResult Function() serverError,
     required TResult Function() networkError,
     required TResult Function() credentialAlreadyUsed,
+    required TResult Function() none,
   }) {
     return success();
   }
@@ -148,6 +155,7 @@ class _$SuccessImpl implements _Success {
     TResult? Function()? serverError,
     TResult? Function()? networkError,
     TResult? Function()? credentialAlreadyUsed,
+    TResult? Function()? none,
   }) {
     return success?.call();
   }
@@ -160,6 +168,7 @@ class _$SuccessImpl implements _Success {
     TResult Function()? serverError,
     TResult Function()? networkError,
     TResult Function()? credentialAlreadyUsed,
+    TResult Function()? none,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -177,6 +186,7 @@ class _$SuccessImpl implements _Success {
     required TResult Function(_NetworkError value) networkError,
     required TResult Function(_CredentialAlreadyUsed value)
         credentialAlreadyUsed,
+    required TResult Function(_None value) none,
   }) {
     return success(this);
   }
@@ -189,6 +199,7 @@ class _$SuccessImpl implements _Success {
     TResult? Function(_ServerError value)? serverError,
     TResult? Function(_NetworkError value)? networkError,
     TResult? Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult? Function(_None value)? none,
   }) {
     return success?.call(this);
   }
@@ -201,6 +212,7 @@ class _$SuccessImpl implements _Success {
     TResult Function(_ServerError value)? serverError,
     TResult Function(_NetworkError value)? networkError,
     TResult Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult Function(_None value)? none,
     required TResult orElse(),
   }) {
     if (success != null) {
@@ -257,6 +269,7 @@ class _$CancelledByUserImpl implements _CancelledByUser {
     required TResult Function() serverError,
     required TResult Function() networkError,
     required TResult Function() credentialAlreadyUsed,
+    required TResult Function() none,
   }) {
     return cancelledByUser();
   }
@@ -269,6 +282,7 @@ class _$CancelledByUserImpl implements _CancelledByUser {
     TResult? Function()? serverError,
     TResult? Function()? networkError,
     TResult? Function()? credentialAlreadyUsed,
+    TResult? Function()? none,
   }) {
     return cancelledByUser?.call();
   }
@@ -281,6 +295,7 @@ class _$CancelledByUserImpl implements _CancelledByUser {
     TResult Function()? serverError,
     TResult Function()? networkError,
     TResult Function()? credentialAlreadyUsed,
+    TResult Function()? none,
     required TResult orElse(),
   }) {
     if (cancelledByUser != null) {
@@ -298,6 +313,7 @@ class _$CancelledByUserImpl implements _CancelledByUser {
     required TResult Function(_NetworkError value) networkError,
     required TResult Function(_CredentialAlreadyUsed value)
         credentialAlreadyUsed,
+    required TResult Function(_None value) none,
   }) {
     return cancelledByUser(this);
   }
@@ -310,6 +326,7 @@ class _$CancelledByUserImpl implements _CancelledByUser {
     TResult? Function(_ServerError value)? serverError,
     TResult? Function(_NetworkError value)? networkError,
     TResult? Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult? Function(_None value)? none,
   }) {
     return cancelledByUser?.call(this);
   }
@@ -322,6 +339,7 @@ class _$CancelledByUserImpl implements _CancelledByUser {
     TResult Function(_ServerError value)? serverError,
     TResult Function(_NetworkError value)? networkError,
     TResult Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult Function(_None value)? none,
     required TResult orElse(),
   }) {
     if (cancelledByUser != null) {
@@ -378,6 +396,7 @@ class _$ServerErrorImpl implements _ServerError {
     required TResult Function() serverError,
     required TResult Function() networkError,
     required TResult Function() credentialAlreadyUsed,
+    required TResult Function() none,
   }) {
     return serverError();
   }
@@ -390,6 +409,7 @@ class _$ServerErrorImpl implements _ServerError {
     TResult? Function()? serverError,
     TResult? Function()? networkError,
     TResult? Function()? credentialAlreadyUsed,
+    TResult? Function()? none,
   }) {
     return serverError?.call();
   }
@@ -402,6 +422,7 @@ class _$ServerErrorImpl implements _ServerError {
     TResult Function()? serverError,
     TResult Function()? networkError,
     TResult Function()? credentialAlreadyUsed,
+    TResult Function()? none,
     required TResult orElse(),
   }) {
     if (serverError != null) {
@@ -419,6 +440,7 @@ class _$ServerErrorImpl implements _ServerError {
     required TResult Function(_NetworkError value) networkError,
     required TResult Function(_CredentialAlreadyUsed value)
         credentialAlreadyUsed,
+    required TResult Function(_None value) none,
   }) {
     return serverError(this);
   }
@@ -431,6 +453,7 @@ class _$ServerErrorImpl implements _ServerError {
     TResult? Function(_ServerError value)? serverError,
     TResult? Function(_NetworkError value)? networkError,
     TResult? Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult? Function(_None value)? none,
   }) {
     return serverError?.call(this);
   }
@@ -443,6 +466,7 @@ class _$ServerErrorImpl implements _ServerError {
     TResult Function(_ServerError value)? serverError,
     TResult Function(_NetworkError value)? networkError,
     TResult Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult Function(_None value)? none,
     required TResult orElse(),
   }) {
     if (serverError != null) {
@@ -499,6 +523,7 @@ class _$NetworkErrorImpl implements _NetworkError {
     required TResult Function() serverError,
     required TResult Function() networkError,
     required TResult Function() credentialAlreadyUsed,
+    required TResult Function() none,
   }) {
     return networkError();
   }
@@ -511,6 +536,7 @@ class _$NetworkErrorImpl implements _NetworkError {
     TResult? Function()? serverError,
     TResult? Function()? networkError,
     TResult? Function()? credentialAlreadyUsed,
+    TResult? Function()? none,
   }) {
     return networkError?.call();
   }
@@ -523,6 +549,7 @@ class _$NetworkErrorImpl implements _NetworkError {
     TResult Function()? serverError,
     TResult Function()? networkError,
     TResult Function()? credentialAlreadyUsed,
+    TResult Function()? none,
     required TResult orElse(),
   }) {
     if (networkError != null) {
@@ -540,6 +567,7 @@ class _$NetworkErrorImpl implements _NetworkError {
     required TResult Function(_NetworkError value) networkError,
     required TResult Function(_CredentialAlreadyUsed value)
         credentialAlreadyUsed,
+    required TResult Function(_None value) none,
   }) {
     return networkError(this);
   }
@@ -552,6 +580,7 @@ class _$NetworkErrorImpl implements _NetworkError {
     TResult? Function(_ServerError value)? serverError,
     TResult? Function(_NetworkError value)? networkError,
     TResult? Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult? Function(_None value)? none,
   }) {
     return networkError?.call(this);
   }
@@ -564,6 +593,7 @@ class _$NetworkErrorImpl implements _NetworkError {
     TResult Function(_ServerError value)? serverError,
     TResult Function(_NetworkError value)? networkError,
     TResult Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult Function(_None value)? none,
     required TResult orElse(),
   }) {
     if (networkError != null) {
@@ -622,6 +652,7 @@ class _$CredentialAlreadyUsedImpl implements _CredentialAlreadyUsed {
     required TResult Function() serverError,
     required TResult Function() networkError,
     required TResult Function() credentialAlreadyUsed,
+    required TResult Function() none,
   }) {
     return credentialAlreadyUsed();
   }
@@ -634,6 +665,7 @@ class _$CredentialAlreadyUsedImpl implements _CredentialAlreadyUsed {
     TResult? Function()? serverError,
     TResult? Function()? networkError,
     TResult? Function()? credentialAlreadyUsed,
+    TResult? Function()? none,
   }) {
     return credentialAlreadyUsed?.call();
   }
@@ -646,6 +678,7 @@ class _$CredentialAlreadyUsedImpl implements _CredentialAlreadyUsed {
     TResult Function()? serverError,
     TResult Function()? networkError,
     TResult Function()? credentialAlreadyUsed,
+    TResult Function()? none,
     required TResult orElse(),
   }) {
     if (credentialAlreadyUsed != null) {
@@ -663,6 +696,7 @@ class _$CredentialAlreadyUsedImpl implements _CredentialAlreadyUsed {
     required TResult Function(_NetworkError value) networkError,
     required TResult Function(_CredentialAlreadyUsed value)
         credentialAlreadyUsed,
+    required TResult Function(_None value) none,
   }) {
     return credentialAlreadyUsed(this);
   }
@@ -675,6 +709,7 @@ class _$CredentialAlreadyUsedImpl implements _CredentialAlreadyUsed {
     TResult? Function(_ServerError value)? serverError,
     TResult? Function(_NetworkError value)? networkError,
     TResult? Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult? Function(_None value)? none,
   }) {
     return credentialAlreadyUsed?.call(this);
   }
@@ -687,6 +722,7 @@ class _$CredentialAlreadyUsedImpl implements _CredentialAlreadyUsed {
     TResult Function(_ServerError value)? serverError,
     TResult Function(_NetworkError value)? networkError,
     TResult Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult Function(_None value)? none,
     required TResult orElse(),
   }) {
     if (credentialAlreadyUsed != null) {
@@ -698,4 +734,130 @@ class _$CredentialAlreadyUsedImpl implements _CredentialAlreadyUsed {
 
 abstract class _CredentialAlreadyUsed implements AuthDataState {
   const factory _CredentialAlreadyUsed() = _$CredentialAlreadyUsedImpl;
+}
+
+/// @nodoc
+abstract class _$$NoneImplCopyWith<$Res> {
+  factory _$$NoneImplCopyWith(
+          _$NoneImpl value, $Res Function(_$NoneImpl) then) =
+      __$$NoneImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$NoneImplCopyWithImpl<$Res>
+    extends _$AuthDataStateCopyWithImpl<$Res, _$NoneImpl>
+    implements _$$NoneImplCopyWith<$Res> {
+  __$$NoneImplCopyWithImpl(_$NoneImpl _value, $Res Function(_$NoneImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$NoneImpl implements _None {
+  const _$NoneImpl();
+
+  @override
+  String toString() {
+    return 'AuthDataState.none()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$NoneImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() success,
+    required TResult Function() cancelledByUser,
+    required TResult Function() serverError,
+    required TResult Function() networkError,
+    required TResult Function() credentialAlreadyUsed,
+    required TResult Function() none,
+  }) {
+    return none();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? success,
+    TResult? Function()? cancelledByUser,
+    TResult? Function()? serverError,
+    TResult? Function()? networkError,
+    TResult? Function()? credentialAlreadyUsed,
+    TResult? Function()? none,
+  }) {
+    return none?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? success,
+    TResult Function()? cancelledByUser,
+    TResult Function()? serverError,
+    TResult Function()? networkError,
+    TResult Function()? credentialAlreadyUsed,
+    TResult Function()? none,
+    required TResult orElse(),
+  }) {
+    if (none != null) {
+      return none();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Success value) success,
+    required TResult Function(_CancelledByUser value) cancelledByUser,
+    required TResult Function(_ServerError value) serverError,
+    required TResult Function(_NetworkError value) networkError,
+    required TResult Function(_CredentialAlreadyUsed value)
+        credentialAlreadyUsed,
+    required TResult Function(_None value) none,
+  }) {
+    return none(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Success value)? success,
+    TResult? Function(_CancelledByUser value)? cancelledByUser,
+    TResult? Function(_ServerError value)? serverError,
+    TResult? Function(_NetworkError value)? networkError,
+    TResult? Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult? Function(_None value)? none,
+  }) {
+    return none?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Success value)? success,
+    TResult Function(_CancelledByUser value)? cancelledByUser,
+    TResult Function(_ServerError value)? serverError,
+    TResult Function(_NetworkError value)? networkError,
+    TResult Function(_CredentialAlreadyUsed value)? credentialAlreadyUsed,
+    TResult Function(_None value)? none,
+    required TResult orElse(),
+  }) {
+    if (none != null) {
+      return none(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _None implements AuthDataState {
+  const factory _None() = _$NoneImpl;
 }
