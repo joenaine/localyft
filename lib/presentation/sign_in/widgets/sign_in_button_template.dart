@@ -40,13 +40,13 @@ class SignInButtonTemplate extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            // Container(
-            //   margin: const EdgeInsets.fromLTRB(10, 5, 5, 5),
-            //   child: Image(
-            //     image: AssetImage(icon),
-            //     height: 25.0,
-            //   ),
-            // ),
+            Container(
+              margin: const EdgeInsets.fromLTRB(10, 5, 5, 5),
+              child: Image(
+                image: AssetImage(icon),
+                height: 25.0,
+              ),
+            ),
             Text(
               title,
               style: TextStyle(

@@ -12,7 +12,20 @@
           "package_name": "com.example.localyft"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "520847529073-sr48t2q1ns81jiikcueug141cjl77lii.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.localyft",
+            "certificate_hash": "7377f339e6d94bef13eda8ced1022c363ae5107c"
+          }
+        },
+        {
+          "client_id": "520847529073-u5o67t7a82rqe2otkl19s9ep3s00ms8e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDK-x84gCqnCnXydvdlo7ypQfPluyb80v4"
@@ -20,7 +33,19 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520847529073-u5o67t7a82rqe2otkl19s9ep3s00ms8e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "520847529073-eejvbj0fvacfq5luafe5brupktbs1ch6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.localyft.RunnerTests"
+              }
+            }
+          ]
         }
       }
     }
