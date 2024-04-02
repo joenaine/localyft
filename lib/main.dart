@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:localyft/app_widget.dart';
 import 'package:localyft/core/utils/translation.dart';
 import 'package:localyft/firebase_options.dart';
+import 'package:localyft/generated/codegen_loader.g.dart';
 import 'package:localyft/injection.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:localyft/presentation/core/theme/theme_global_var.dart'
@@ -30,6 +31,7 @@ Future<void> main() async {
       supportedLocales: supportedLocales,
       path: 'assets/translations',
       fallbackLocale: supportedLocales[0],
+      assetLoader: const CodegenLoader(),
       child: AppWidget(),
     ),
   );

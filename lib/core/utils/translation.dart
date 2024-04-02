@@ -3,9 +3,9 @@ import 'package:localyft/presentation/core/theme/theme_global_var.dart';
 
 getTranslation(dynamic data) {
   print(locale.languageCode);
-  if (locale.languageCode == 'fi' &&
-      (data.fi.name != null || data.fi.description != null)) {
-    return data.fi;
+  if (locale.languageCode == 'ru' &&
+      (data.ru.name != null || data.ru.description != null)) {
+    return data.ru;
   }
 //default english language
   else {
@@ -14,6 +14,6 @@ getTranslation(dynamic data) {
 }
 
 final supportedLocales = [
-  // const Locale('ru', 'Russian'),
+  const Locale('ru', 'Russian'),
   const Locale('en', 'English'),
 ];

@@ -1,4 +1,4 @@
-package com.example.localyft
+package com.localyft.app
 
 import io.flutter.embedding.android.FlutterActivity
 

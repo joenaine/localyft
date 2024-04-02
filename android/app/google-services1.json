@@ -7,17 +7,17 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:520847529073:android:9382e6db4c90395fbeb7d0",
+        "mobilesdk_app_id": "1:520847529073:android:b90890dcc14bd8fbbeb7d0",
         "android_client_info": {
-          "package_name": "com.localyft.app"
+          "package_name": "com.example.localyft"
         }
       },
       "oauth_client": [
         {
-          "client_id": "520847529073-1418ad31vbktmlu624dm8bda53b317iv.apps.googleusercontent.com",
+          "client_id": "520847529073-sr48t2q1ns81jiikcueug141cjl77lii.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.localyft.app",
+            "package_name": "com.example.localyft",
             "certificate_hash": "7377f339e6d94bef13eda8ced1022c363ae5107c"
           }
         },
