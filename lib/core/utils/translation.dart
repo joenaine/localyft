@@ -14,6 +14,6 @@ getTranslation(dynamic data) {
 }
 
 final supportedLocales = [
-  const Locale('ru', 'Russian'),
-  const Locale('en', 'English'),
+  const Locale('ru'),
+  const Locale('en'),
 ];

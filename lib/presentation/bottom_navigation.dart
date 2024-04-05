@@ -2,6 +2,7 @@ import 'package:auto_route/auto_route.dart';
 import 'package:flutter/material.dart';
 import 'package:localyft/presentation/core/theme/colors.dart';
 import 'package:localyft/presentation/core/theme/custom_icons.dart';
+import 'package:localyft/presentation/home/home_view.dart';
 import 'package:localyft/presentation/sign_in/widgets/log_out_button.dart';
 import 'package:localyft/presentation/core/theme/theme_global_var.dart'
     as global;
@@ -52,7 +53,7 @@ class _BottomNavigationPageState extends State<BottomNavigationPage>
   void initState() {
     WidgetsBinding.instance.addObserver(this);
     _screens = [
-      Container(),
+      const HomeView(),
       Container(),
       Container(),
       Container(),

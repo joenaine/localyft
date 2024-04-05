@@ -15,12 +15,16 @@ class CodegenLoader extends AssetLoader{
   }
 
   static const Map<String,dynamic> ru = {
+  "home": "HomeSds",
   "Settings": "Настройки",
-  "News": "Новости"
+  "News": "Новости",
+  "Audience": "Аудитория"
 };
 static const Map<String,dynamic> en = {
+  "home": "HomeSds",
   "Settings": "Settings",
-  "News": "News"
+  "News": "News",
+  "Audience": "Audience"
 };
 static const Map<String, Map<String,dynamic>> mapLocales = {"ru": ru, "en": en};
 }
