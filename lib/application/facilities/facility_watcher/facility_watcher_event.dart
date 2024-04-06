@@ -8,6 +8,15 @@ class FacilityWatcherEvent with _$FacilityWatcherEvent {
   }) = _WatchByCategory;
 
   const factory FacilityWatcherEvent.filterFacilites({
-    required List<void> fetchedFacilities,
+    required List<FacilityDataState?> fetchedFacilities,
   }) = _FilterFacilites;
+
+  const factory FacilityWatcherEvent.categorizeFacilities({
+    required List<Facility> filteredFacilities,
+    required List<FacilityDataState?> fetchedFacilities,
+  }) = _CategorizeFacilities;
+
+  const factory FacilityWatcherEvent.handleError({
+    required FacilityFailure failure,
+  }) = _HandleErrorFacilityWatcherEvent;
 }

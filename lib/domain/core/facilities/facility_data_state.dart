@@ -1,14 +1,9 @@
-abstract class DataState<T> {
-  final T? data;
-  final DioError? error;
+import 'package:localyft/domain/core/facilities/facility.dart';
+import 'package:localyft/domain/core/facilities/facility_failure.dart';
 
-  const DataState({this.data, this.error});
-}
+abstract class FacilityDataState<T> {
+  final Facility? data;
+  final FacilityFailure? error;
 
-class DataSuccess<T> extends DataState<T> {
-  const DataSuccess(T data) : super(data: data);
-}
-
-class DataFailed<T> extends DataState<T> {
-  const DataFailed(DioError error) : super(error: error);
+  const FacilityDataState({this.data, this.error});
 }

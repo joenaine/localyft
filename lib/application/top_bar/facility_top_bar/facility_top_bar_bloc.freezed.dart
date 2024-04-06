@@ -94,10 +94,10 @@ class __$$DropdownOpenedImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? selection = freezed,
+    Object? selection = null,
   }) {
     return _then(_$DropdownOpenedImpl(
-      freezed == selection
+      null == selection
           ? _value.selection
           : selection // ignore: cast_nullable_to_non_nullable
               as AppBarSelection,
@@ -123,12 +123,12 @@ class _$DropdownOpenedImpl implements _DropdownOpened {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$DropdownOpenedImpl &&
-            const DeepCollectionEquality().equals(other.selection, selection));
+            (identical(other.selection, selection) ||
+                other.selection == selection));
   }
 
   @override
-  int get hashCode =>
-      Object.hash(runtimeType, const DeepCollectionEquality().hash(selection));
+  int get hashCode => Object.hash(runtimeType, selection);
 
   @JsonKey(ignore: true)
   @override
@@ -344,11 +344,11 @@ class _$FacilityTopBarStateCopyWithImpl<$Res, $Val extends FacilityTopBarState>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? selection = freezed,
+    Object? selection = null,
     Object? isDropdownOpen = null,
   }) {
     return _then(_value.copyWith(
-      selection: freezed == selection
+      selection: null == selection
           ? _value.selection
           : selection // ignore: cast_nullable_to_non_nullable
               as AppBarSelection,
@@ -382,11 +382,11 @@ class __$$FacilityTopBarStateImplCopyWithImpl<$Res>
   @pragma('vm:prefer-inline')
   @override
   $Res call({
-    Object? selection = freezed,
+    Object? selection = null,
     Object? isDropdownOpen = null,
   }) {
     return _then(_$FacilityTopBarStateImpl(
-      selection: freezed == selection
+      selection: null == selection
           ? _value.selection
           : selection // ignore: cast_nullable_to_non_nullable
               as AppBarSelection,
@@ -419,14 +419,14 @@ class _$FacilityTopBarStateImpl implements _FacilityTopBarState {
     return identical(this, other) ||
         (other.runtimeType == runtimeType &&
             other is _$FacilityTopBarStateImpl &&
-            const DeepCollectionEquality().equals(other.selection, selection) &&
+            (identical(other.selection, selection) ||
+                other.selection == selection) &&
             (identical(other.isDropdownOpen, isDropdownOpen) ||
                 other.isDropdownOpen == isDropdownOpen));
   }
 
   @override
-  int get hashCode => Object.hash(runtimeType,
-      const DeepCollectionEquality().hash(selection), isDropdownOpen);
+  int get hashCode => Object.hash(runtimeType, selection, isDropdownOpen);
 
   @JsonKey(ignore: true)
   @override
